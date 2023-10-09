@@ -53,3 +53,7 @@ export function checkGuess(guess, answer) {
 
   return result;
 }
+
+export function checkGuesses(guesses, answer) {
+  return guesses.map(guess => checkGuess(guess, answer));
+}
